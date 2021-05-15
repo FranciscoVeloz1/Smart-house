@@ -1,3 +1,3 @@
-# node-hbs-mysql-template
+# Mintel
 
-Server side render template... Using handlebars like view engine, express like backend framework and MySQL like database
+Mintel project
