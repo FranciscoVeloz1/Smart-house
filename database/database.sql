@@ -1,6 +1,6 @@
 
-create database punto_venta;
-use punto_venta;
+create database mintel;
+use mintel;
 
 create table rol(
     id int primary key auto_increment,
