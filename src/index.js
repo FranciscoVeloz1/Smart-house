@@ -49,6 +49,9 @@ app.use((req, res, next) => {
     next()
 })
 
+//Public
+app.use(express.static(path.join(__dirname, 'public')));
+
 //Routes
 app.use(require('./routes/index.route'));
 app.use(require('./routes/auth.route'));
@@ -58,9 +61,6 @@ app.use(require('./routes/admin.dash.route'));
 app.use(require('./routes/admin.admin.route'));
 app.use(require('./routes/admin.super.route'));
 app.use(require('./routes/admin.user.route'));
-
-//Public
-app.use(express.static(path.join(__dirname, 'public')));
 
 //Starting
 app.listen(app.get('port'), () => {
