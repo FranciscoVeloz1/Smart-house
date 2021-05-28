@@ -1,0 +1,100 @@
+.icon {
+  font-size: 50px;
+  color: #335eea;
+}
+
+.icon-ok {
+  color: #c3e6cb;
+}
+
+.navbar {
+  background-color: #5f7399;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.navbar-nav a {
+  color: #5f7399;
+}
+
+.auth a {
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.welcome {
+  margin-top: 110px;
+  margin-bottom: 110px;
+}
+
+.welcome img {
+  width: 100%;
+}
+
+.welcome .btn-primary-soft {
+  background-color: #eaeefd;
+  color: #335eea;
+}
+
+.welcome .btn-primary-soft:hover {
+  background-color: #f4f6ff;
+}
+
+.n-border {
+  border: none;
+}
+
+.software img {
+  width: 100%;
+}
+
+.contact {
+  margin-top: 100px;
+}
+.contact img {
+  width: 100%;
+}
+
+/* Footer */
+.pie_de_pagina {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: 100px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.pie_de_pagina a {
+  color: #7f7f7f;
+  cursor: pointer;
+  font-size: 1rem;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.pie_de_pagina a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* MEDIA QUERIES 500px*/
+@media (max-width: 500px) {
+  /* WELCOME */
+  .welcome {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  /* /WELCOME */
+
+  .pie_de_pagina {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+}

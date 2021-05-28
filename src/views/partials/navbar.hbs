@@ -1,4 +1,4 @@
-<nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+{{!-- <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
         <a class="navbar-brand" href="/">
             Template
@@ -36,5 +36,51 @@
         </div>
 
         {{/if}}
+    </div>
+</nav> --}}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white pt-4 pb-4 sticky-top">
+    <div class="container">
+        <a href="#home" class="navbar-brand brand">
+            <span class="text-primary">Mintel</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item pr-lg-4">
+                    <a href="#products" class="nav-link">Productos</a>
+                </li>
+
+                <li class="nav-item pl-lg-4 pr-4">
+                    <a href="#software" class="nav-link">Software</a>
+                </li>
+
+                <li class="nav-item pl-lg-4 pr-4">
+                    <a href="#about" class="nav-link">Acerca de</a>
+                </li>
+
+                <li class="nav-item pl-lg-4 pr-4">
+                    <a href="#contact" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+
+            {{#if user}}
+            <div class="ml-auto">
+                <a href="#" class="btn btn-outline-secondary mr-1">Hogar</a>
+                <a href="/logout" class="btn btn-primary">Cerrar sesión</a>
+            </div>
+
+            {{else}}
+            <div class="ml-auto">
+                <a href="/login" class="btn btn-outline-secondary mr-1">Iniciar sesion</a>
+                <a href="/signup" class="btn btn-primary">Registrate</a>
+            </div>
+            {{/if}}
+        </div>
     </div>
 </nav>

@@ -10,7 +10,7 @@ const keys = {
         host: 'localhost',
         user: 'root',
         password: '',
-        database: 'punto_venta'
+        database: 'mintel'
     }
 }
 
