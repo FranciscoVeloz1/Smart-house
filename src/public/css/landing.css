@@ -27,8 +27,8 @@
 }
 
 .welcome {
-  margin-top: 110px;
-  margin-bottom: 110px;
+  padding-top: 125px;
+  height: 600px;
 }
 
 .welcome img {
@@ -46,6 +46,12 @@
 
 .n-border {
   border: none;
+}
+
+.software {
+  height: 650px;
+  display: flex;
+  align-items: center;
 }
 
 .software img {
@@ -83,11 +89,11 @@
 }
 
 /* MEDIA QUERIES 500px*/
-@media (max-width: 500px) {
+@media (max-width: 668px) {
   /* WELCOME */
   .welcome {
-    margin-top: 10px;
-    margin-bottom: 0px;
+    height: 600px;
+    padding-top: 10px;
   }
   /* /WELCOME */
 

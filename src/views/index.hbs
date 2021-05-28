@@ -1,11 +1,11 @@
 {{>navbar}}
 
 <div id="home"></div>
-
+{{!-- MAIN --}}
 <section class="welcome">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-12 col-md-6 col-lg-6 mb-3">
+            <div id="main-text" class="col-12 col-md-6 col-lg-6 mb-3">
                 <h1 class="text-center text-md-left mb-4">
                     Bienvenidos al <span class="text-primary">Mintel</span>
                 </h1>
@@ -20,7 +20,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-6">
+            <div id="main-image" class="col-12 col-md-6 col-lg-6">
                 <img src='https://images.pexels.com/photos/205316/pexels-photo-205316.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
                     class="" alt="" />
             </div>
@@ -28,10 +28,12 @@
     </div>
     <div id="products"></div>
 </section>
+{{!-- /MAIN --}}
 
+{{!-- PRODUCTS --}}
 <div class="container mt-5 mb-5">
     <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-6 col-12 text-center mb-5">
+        <div id="pro-1" class="col-lg-4 col-md-6 col-12 text-center mb-5">
             <div class="card n-border">
                 <div class="card-body shadow-lg">
                     <span class="badge alert-primary mb-3 p-2">Confort house</span>
@@ -63,7 +65,7 @@
             </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-12 text-center mb-5">
+        <div id="pro-2" class="col-lg-4 col-md-6 col-12 text-center mb-5">
             <div class="card n-border">
                 <div class="card-body shadow-lg">
                     <span class="badge alert-primary mb-3 p-2">Confort house +</span>
@@ -87,6 +89,9 @@
                     <p>
                         <i class="fas fa-check-circle icon-ok"></i> Maximo 10 usuarios
                     </p>
+                    <p>
+                        <i class="fas fa-check-circle icon-ok"></i> Manteminiemto asegurado
+                    </p>
                     <a href="#" class="btn btn-primary btn-block">
                         Adquirir
                     </a>
@@ -94,7 +99,7 @@
             </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-12 text-center mb-5">
+        <div id="pro-3" class="col-lg-4 col-md-6 col-12 text-center mb-5">
             <div class="card n-border">
                 <div class="card-body shadow-lg">
                     <span class="badge alert-primary mb-3 p-2">
@@ -134,15 +139,17 @@
     </div>
     <div id="software"></div>
 </div>
+{{!-- /PRODUCTS --}}
 
-<div class="software container pt-5 mb-5">
+{{!-- SOFTWARE --}}
+<div class="software container">
     <div class="row">
-        <div class="col-12 col-lg-6 mb-5">
+        <div id="soft-img" class="col-12 col-lg-6 mb-5">
             <img src="https://consumer-img.huawei.com/content/dam/huawei-cbg-site/latam/latin/mkt/pdp/plp-banner/x-pro.png"
                 alt="" />
         </div>
 
-        <div class="col-12 col-lg-6">
+        <div id="soft-text" class="col-12 col-lg-6">
             <h1 class="text-center text-md-left mb-5">
                 La mejor aplicacion de IoT
                 <br />
@@ -167,10 +174,12 @@
     </div>
     <div id="about"></div>
 </div>
+{{!-- /SOFTWARE --}}
 
+{{!-- TARJETAS --}}
 <div class="container mt-5 mb-5">
     <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-6 col-12 text-center mt-5">
+        <div id="tar-1" class="col-lg-4 col-md-6 col-12 text-center mt-5">
             <i class="fas fa-home icon mb-3"></i>
             <h3 class="mb-3">Mintel</h3>
             <p class="text-muted">
@@ -180,7 +189,7 @@
             </p>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-12 text-center mt-5">
+        <div id="tar-2" class="col-lg-4 col-md-6 col-12 text-center mt-5">
             <i class="fas fa-warehouse icon mb-3"></i>
             <h3 class="mb-3">Confort house</h3>
             <p class="text-muted">
@@ -190,7 +199,7 @@
             </p>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-12 text-center mt-5">
+        <div id="tar-3" class="col-lg-4 col-md-6 col-12 text-center mt-5">
             <i class="fas fa-mobile-alt icon mb-3"></i>
             <h3 class="mb-3">Mintel House</h3>
             <p class="text-muted">
@@ -202,8 +211,10 @@
     </div>
     <div id="contact"></div>
 </div>
+{{!-- /TARJETAS --}}
 
-<div class="contact container">
+{{!-- CONTACTO --}}
+<div id="contact" class="contact container pt-5">
     <div class="row">
         <div class="col-lg-5 col-md-8 col-12 mx-auto mb-5">
             <div class="card tarjeta n-border shadow-lg">
@@ -232,5 +243,7 @@
         </div>
     </div>
 </div>
+{{!-- CONTACTO --}}
 
 {{>footer}}
+<script src="/js/scrollreveal/landing.js"></script>
