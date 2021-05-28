@@ -7,6 +7,7 @@ const session = require('express-session')
 const passport = require('passport')
 const flash = require('connect-flash')
 const MySQLStore = require('express-mysql-session')(session)
+const five = require('./lib/five')
 require('dotenv').config()
 
 //Variables statements
@@ -14,6 +15,8 @@ const { database } = require('./config/keys')
 
 //Initializations
 const app = express()
+const board = new five()
+board.InitBoard()
 require('./lib/passport')
 
 //Settings
