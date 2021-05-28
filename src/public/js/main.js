@@ -8,3 +8,24 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         });
     });
 });
+
+const APAGADO = "🔴 Apagado"
+const ENCENDIDO = "🟢 Encendido"
+
+let iosocket = io()
+
+iosocket.on('hola', hola => {
+    console.log(hola)
+})
+
+const sendData = () => {
+    iosocket.emit('enc', 'Hola mundo')
+}
+
+const recur = () => {
+    sendData()
+    // console.log('hola')
+    setTimeout(recur, 1000)
+}
+
+recur()

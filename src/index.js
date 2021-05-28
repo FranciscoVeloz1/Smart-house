@@ -1,5 +1,6 @@
 //Dependencies
 const express = require('express')
+const http = require('http')
 const morgan = require('morgan')
 const path = require('path')
 const exphbs = require('express-handlebars')
@@ -15,12 +16,16 @@ const { database } = require('./config/keys')
 
 //Initializations
 const app = express()
-const board = new five()
-board.InitBoard()
+const server = http.Server(app)
 require('./lib/passport')
 
+// const board = new five(server)
+// board.InitBoard()
+// board.SendData()
+five(server)
+
 //Settings
-app.set('port', process.env.PORT || 5000)
+app.set('port', process.env.PORT || 3000)
 app.set('views', path.join(__dirname, 'views'))
 app.engine('.hbs', exphbs({
     defaultLayout: 'main',
@@ -66,6 +71,6 @@ app.use(require('./routes/admin.super.route'));
 app.use(require('./routes/admin.user.route'));
 
 //Starting
-app.listen(app.get('port'), () => {
+server.listen(app.get('port'), () => {
     console.log('Server on port', app.get('port'))
 })

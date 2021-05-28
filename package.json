@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon src/index",
     "start": "node src/index",
-    "port": "sudo chmod a+rw /dev/ttyACM0"
+    "port": "sudo chmod a+rw /dev/ttyACM1"
   },
   "keywords": [],
   "author": "",
