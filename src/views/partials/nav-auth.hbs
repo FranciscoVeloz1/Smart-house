@@ -9,11 +9,20 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
+        {{#if user}}
+        <div class="ml-auto">
+            <a href="/home" class="btn btn-outline-secondary mr-1">Hogar</a>
+            <a href="/logout" class="btn btn-primary">Cerrar sesión</a>
+        </div>
+
+        {{else}}
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="ml-auto">
                 <a href="/login" class="btn btn-outline-secondary mr-1">Iniciar sesion</a>
                 <a href="/signup" class="btn btn-primary">Registrate</a>
             </div>
         </div>
+        {{/if}}
+
     </div>
 </nav>

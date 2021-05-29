@@ -18,14 +18,10 @@ const { database } = require('./config/keys')
 const app = express()
 const server = http.Server(app)
 require('./lib/passport')
-
-// const board = new five(server)
-// board.InitBoard()
-// board.SendData()
 five(server)
 
 //Settings
-app.set('port', process.env.PORT || 3000)
+app.set('port', process.env.PORT || 5000)
 app.set('views', path.join(__dirname, 'views'))
 app.engine('.hbs', exphbs({
     defaultLayout: 'main',
@@ -63,6 +59,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Routes
 app.use(require('./routes/index.route'));
 app.use(require('./routes/auth.route'));
+app.use(require('./routes/home.route'));
 
 //Admin routes
 app.use(require('./routes/admin.dash.route'));

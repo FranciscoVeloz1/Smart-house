@@ -12,20 +12,14 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 const APAGADO = "🔴 Apagado"
 const ENCENDIDO = "🟢 Encendido"
 
-let iosocket = io()
+let socket = io()
 
-iosocket.on('hola', hola => {
+socket.on('hola', hola => {
     console.log(hola)
 })
 
 const sendData = () => {
-    iosocket.emit('enc', 'Hola mundo')
+    socket.emit('enc', 'Hola mundo')
 }
 
-const recur = () => {
-    sendData()
-    // console.log('hola')
-    setTimeout(recur, 1000)
-}
-
-recur()
+sendData()
