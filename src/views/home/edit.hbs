@@ -1,0 +1,45 @@
+{{>nav-auth}}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 mx-auto">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Editar habitacion</h2>
+                </div>
+                <div class="card-body">
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <select name="img" class="form-control" placeholder="Imagen" required>
+                                <option value="">Imagen Habitacion 1</option>
+                                <option value="">Imagen Habitacion 2</option>
+                                <option value="">Imagen Habitacion 3</option>
+                                <option value="">Imagen Sala</option>
+                                <option value="">Imagen Comedor</option>
+                                <option value="">Imagen Jardin</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <img id="img-edit"
+                                src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                alt="Selecciona una imagen" class="card-img-top">
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Editar</button>
+                        </div>
+
+                        <div class="form-group">
+                            <a href="#" class="btn btn-danger btn-block">Eliminar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

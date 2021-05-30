@@ -10,9 +10,11 @@
         </button>
 
         {{#if user}}
-        <div class="ml-auto">
-            <a href="/home" class="btn btn-outline-secondary mr-1">Hogar</a>
-            <a href="/logout" class="btn btn-primary">Cerrar sesión</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="ml-auto">
+                <a href="/home" class="btn btn-outline-secondary mr-1">Hogar</a>
+                <a href="/logout" class="btn btn-primary">Cerrar sesión</a>
+            </div>
         </div>
 
         {{else}}
