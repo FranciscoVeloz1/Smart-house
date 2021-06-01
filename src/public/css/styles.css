@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -169,12 +171,26 @@ a[data-toggle="collapse"] {
 
 .icon-edit {
   font-size: 30px;
-  color: black;
+  color: #6c757d;
   text-decoration: none;
+}
+
+.card-ani {
+  transition: 450ms all;
+}
+
+.card-ani:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .card-img-top {
   height: 180px;
+}
+
+.title {
+  font-weight: bold;
+  color: black;
 }
 
 /* ADMIN CRUD */
@@ -265,5 +281,14 @@ a[data-toggle="collapse"] {
 
   .admin_crud__container--form {
     width: 80%;
+  }
+
+  .card-img-top {
+    height: 220px;
+  }
+
+  .card-ani:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
