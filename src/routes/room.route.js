@@ -7,5 +7,6 @@ router.get('/home/principal', isLoggedIn, controller.ListPrincipal)
 router.get('/home/son', isLoggedIn, controller.ListSon)
 router.get('/home/extra', isLoggedIn, controller.ListExtra)
 router.get('/home/living', isLoggedIn, controller.ListLiving)
+router.get('/home/sensor', isLoggedIn, controller.ListSensor)
 
 module.exports = router

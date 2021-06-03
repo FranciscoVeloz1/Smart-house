@@ -13,13 +13,3 @@ const APAGADO = "🔴 Apagado"
 const ENCENDIDO = "🟢 Encendido"
 
 let socket = io()
-
-socket.on('hola', hola => {
-    console.log(hola)
-})
-
-const sendData = () => {
-    socket.emit('enc', 'Hola mundo')
-}
-
-sendData()

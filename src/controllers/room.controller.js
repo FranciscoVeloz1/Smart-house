@@ -14,6 +14,10 @@ class RoomController {
     ListLiving(req, res) {
         res.render('rooms/living')
     }
+
+    ListSensor(req, res) {
+        res.render('rooms/sensor')
+    }
 }
 
 module.exports = new RoomController()
