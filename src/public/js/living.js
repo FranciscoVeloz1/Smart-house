@@ -1,7 +1,7 @@
 import c from './control.js'
 
-c.encender('encFocoLiv', 'FocoLiv', 'focoExE', '11')
-c.apagar('apgFocoLiv', 'FocoLiv', 'focoExA', '12')
+c.encender('encFocoLiv', 'FocoLiv', 'focoSaE', '11')
+c.apagar('apgFocoLiv', 'FocoLiv', 'focoSaA', '12')
 
 c.encender('encConExtra', 'ConExtra', 'n', 'n')
 c.apagar('apgConExtra', 'ConExtra', 'n', 'n')

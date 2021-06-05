@@ -15,6 +15,14 @@ class RoomController {
         res.render('rooms/living')
     }
 
+    ListBath(req, res) {
+        res.render('rooms/bath')
+    }
+
+    ListJardin(req, res) {
+        res.render('rooms/jardin')
+    }
+
     ListSensor(req, res) {
         res.render('rooms/sensor')
     }

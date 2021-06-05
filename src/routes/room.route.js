@@ -8,5 +8,7 @@ router.get('/home/son', isLoggedIn, controller.ListSon)
 router.get('/home/extra', isLoggedIn, controller.ListExtra)
 router.get('/home/living', isLoggedIn, controller.ListLiving)
 router.get('/home/sensor', isLoggedIn, controller.ListSensor)
+router.get('/home/bath', isLoggedIn, controller.ListBath)
+router.get('/home/garden', isLoggedIn, controller.ListJardin)
 
 module.exports = router
