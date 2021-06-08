@@ -15,7 +15,7 @@ socket.on('temp', data => {
 })
 
 socket.on('gas', data => {
-    if (data < 110) {
+    if (data < 130) {
         document.querySelector('#gas').innerHTML = "🟢 Nivel bajo de gas"
     } else {
         document.querySelector('#gas').innerHTML = "🔴 Nivel alto de gas";
